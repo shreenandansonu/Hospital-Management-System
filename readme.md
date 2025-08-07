@@ -6,4 +6,4 @@ This project is a personal project done to understand the OOPs concept using pyt
 
 The following is a basic understanging of the elements of the systems their attributes and their connection with each other.
 
-![Flow Structure]()
+![Flow Structure](https://github.com/shreenandansonu/Hospital-Management-System/blob/main/DOCS/system%20design.png?raw=true)
