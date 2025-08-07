@@ -4,12 +4,13 @@ con=sq3.connect('data.db')
 
 cur=con.cursor()
 
-# cur.execute("SELECT rowid,* FROM customers ORDER BY rowid DESC")
-cur.execute("SELECT rowid,* FROM customers ORDER BY last_name DESC")
-
-itemas=cur.fetchall()
-for item in itemas:
-    print(item)
+list_of_customers = [
+    ('Shreenandan', 'Sahu', 'shrenandansahu123@gmail.com'),
+    ('suraksha','jain','surakshajain06@gmail.com'),
+    ('pradeepta','Kumar','pksahu123@gmial.com')
+]
+cur.executemany("INSERT INTO customers VALUES (?,?,?)", list_of_customers)
+print("Data inserted successfully")
 
 con.commit()
 con.close()     

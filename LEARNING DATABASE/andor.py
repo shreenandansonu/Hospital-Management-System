@@ -1,6 +1,6 @@
 import sqlite3 as sq3
 
-con=sq3.connect('data.db')
+con=sq3.connect('LEARNING DATABASE\data.db')
 
 cur=con.cursor()
 
