@@ -1,10 +1,11 @@
-hospital_mgmt/
-├── main.py           # Entry point
-├── models/           # Classes for Admin, Doctor, Patient, Appointment, Pharma, etc.
-├── views/            # Tkinter UI screens
-├── controllers/      # Connects UI to models (CRUD logic)
-├── database/         
-│   ├── db_init.py    # Create tables if not exist
-│   └── hospital.db   # SQLite database
-├── utils/            # Helper functions
-└── assets/           # Icons, images
+hospital_management/
+│
+├── database_setup.py       # Creates database & tables (run once at start)
+├── database/
+│   └── hospital_management.db  # Generated after running database_setup.py
+├── app/
+│   ├── main.py             # Your main app/UI file
+│   ├── models.py           # Classes for Admin, Doctor, Patient, etc.
+│   ├── controllers.py      # CRUD operations & business logic
+│   └── views.py            # Tkinter GUI or CLI views
+└── requirements.txt        # Dependencies if any
